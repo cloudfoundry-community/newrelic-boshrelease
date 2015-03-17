@@ -1,0 +1,5 @@
+check process newrelic-monitor
+  with pidfile /var/vcap/sys/run/newrelic-monitor/newrelic-monitor.pid
+  start program "/var/vcap/jobs/newrelic-monitor/bin/monit_debugger newrelic-monitor_ctl '/var/vcap/jobs/newrelic-monitor/bin/newrelic-monitor_ctl start'"
+  stop program "/var/vcap/jobs/newrelic-monitor/bin/monit_debugger newrelic-monitor_ctl '/var/vcap/jobs/newrelic-monitor/bin/newrelic-monitor_ctl stop'"
+  group vcap

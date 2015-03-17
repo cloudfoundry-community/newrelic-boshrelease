@@ -1,0 +1,5 @@
+---
+name: newrelic-daemon
+dependencies: []
+files:
+- newrelic-daemon/newrelic-sysmond-2.0.3.113-linux.tar.gz
