@@ -1,0 +1,16 @@
+---
+packages:
+- name: newrelic-daemon
+  version: bba1d5196f637af1e1ad11876cbb68f37b30ec7a
+  fingerprint: bba1d5196f637af1e1ad11876cbb68f37b30ec7a
+  sha1: 650c62618ce6870f027b87bb0ce0aee8392238ab
+  dependencies: []
+jobs:
+- name: newrelic-monitor
+  version: 441d7213cd75071a65fb9389e032dfa2d2989ccb
+  fingerprint: 441d7213cd75071a65fb9389e032dfa2d2989ccb
+  sha1: 854fabe675ed0d8686a38485f973874fca80fbf0
+commit_hash: 8dae9c74
+uncommitted_changes: true
+name: newrelic
+version: '1'
