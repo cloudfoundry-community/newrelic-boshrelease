@@ -1,4 +1,4 @@
-# BOSH Release for newrelic
+# BOSH Release for newrelic server monitor
 
 ## Usage
 
