@@ -1,0 +1,13 @@
+---
+name: newrelic
+packages: []
+templates:
+  bin/monit_debugger: bin/monit_debugger
+  bin/newrelic_ctl: bin/newrelic_ctl
+  config/newrelic.conf.erb: config/newrelic.conf
+  data/properties.sh.erb: data/properties.sh
+  helpers/ctl_setup.sh: helpers/ctl_setup.sh
+  helpers/ctl_utils.sh: helpers/ctl_utils.sh
+properties:
+  newrelic.leader_address:
+    description: Hostname/IP to the leader/master of the cluster
