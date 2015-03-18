@@ -35,11 +35,12 @@ do
   export PATH=${package_bin_dir}:$PATH
 done
 
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:-''} # default to empty
-for package_bin_dir in $(ls -d /var/vcap/packages/*/lib)
-do
-  export LD_LIBRARY_PATH=${package_bin_dir}:$LD_LIBRARY_PATH
-done
+# Commenting out due to Segmentation Fault issue: https://github.com/cloudfoundry-community/bosh-gen/issues/33
+# export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:-''} # default to empty
+# for package_bin_dir in $(ls -d /var/vcap/packages/*/lib)
+# do
+#   export LD_LIBRARY_PATH=${package_bin_dir}:$LD_LIBRARY_PATH
+# done
 
 # Setup log, run and tmp folders
 
