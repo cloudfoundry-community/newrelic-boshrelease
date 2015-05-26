@@ -13,3 +13,5 @@ templates:
 properties:
   newrelic.license_key:
     description: "Newrelic License Key"
+  newrelic.deployment_tag:
+    description: "The deployment tag that would appear in New Relic."
