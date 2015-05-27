@@ -18,6 +18,7 @@ properties:
   ...
   newrelic:
     license_key: foobar
+    deployment_tag: my_deployment
 releases:
 - ...
 - name: newrelic
