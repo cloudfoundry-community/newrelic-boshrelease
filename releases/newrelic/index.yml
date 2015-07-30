@@ -2,4 +2,6 @@
 builds:
   fc62fe32-8e18-4003-ac56-acbaa13b2072:
     version: '10'
+  fe5f19d0-c5c0-4f29-a6d8-53493aacb259:
+    version: '11'
 format-version: '2'
