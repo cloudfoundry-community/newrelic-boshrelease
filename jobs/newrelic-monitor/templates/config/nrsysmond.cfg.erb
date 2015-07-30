@@ -8,7 +8,7 @@ loglevel=info
 
 ssl=true
 
-hostname=<%= name %>-<%= spec.index %>
+hostname=<%= name %>-<%= spec.index %>-<%= properties.newrelic.deployment_tag %>
 
 <% if properties.newrelic.deployment_tag %>
 labels="Deployment:<%= properties.newrelic.deployment_tag %>"
