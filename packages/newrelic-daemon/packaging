@@ -8,7 +8,8 @@ CPUS=$(grep -c ^processor /proc/cpuinfo)
 # $BOSH_INSTALL_TARGET - where you copy/install files to be included in package
 export HOME=/var/vcap
 
-tar xfv newrelic-daemon/newrelic-sysmond-2.0.3.113-linux.tar.gz
+VERSION=2.3.0.129
+tar xfv newrelic-daemon/newrelic-sysmond-${VERSION}-linux.tar.gz
 
 mkdir $BOSH_INSTALL_TARGET/bin
-cp -a newrelic-sysmond-2.0.3.113-linux/daemon/nrsysmond.x64 $BOSH_INSTALL_TARGET/bin/
+cp -a newrelic-sysmond-${VERSION}-linux/daemon/nrsysmond.x64 $BOSH_INSTALL_TARGET/bin/

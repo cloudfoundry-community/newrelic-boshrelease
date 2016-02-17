@@ -1,5 +1,5 @@
 ---
-newrelic-daemon/newrelic-sysmond-2.0.3.113-linux.tar.gz:
-  object_id: 1be82e3b-1894-4acd-9cfb-9c14740a2932
-  sha: f529d81b1fd25639b4d69ebffa1381586c5d94bf
-  size: 3767006
+newrelic-daemon/newrelic-sysmond-2.3.0.129-linux.tar.gz:
+  object_id: ee598267-3f25-4b7f-8914-b3d97926c891
+  sha: 032801ae58a96b2a1577716ed83a02f0ca1dae55
+  size: 3821939
