@@ -15,3 +15,6 @@ properties:
     description: "Newrelic License Key"
   newrelic.deployment_tag:
     description: "The deployment tag that would appear in New Relic."
+  newrelic.proxy:
+    description: "http/https proxy to use to access newrelic saas. see  https://docs.newrelic.com/docs/servers/new-relic-servers-linux/installation-configuration/linux-configuration-new-relic-servers "
+    example: "fred:secret@proxy.mydomain.com:8181"
