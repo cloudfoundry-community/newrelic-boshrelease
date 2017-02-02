@@ -1,0 +1,27 @@
+---
+meta:
+  name:    newrelic
+  release: NewRelic
+  target:  sw
+  url:     https://ci.starkandwayne.com
+
+  initial_version: 14.0.0
+
+  bosh-lite:
+    target: https://10.58.111.44:25555
+    deployment: newrelic-warden
+
+  aws:
+    access_key: (( vault "secret/aws/cfcommunity:access" ))
+    secret_key: (( vault "secret/aws/cfcommunity:secret" ))
+
+  github:
+    owner:  cloudfoundry-community
+    repo:   newrelic-boshrelease
+    branch: master
+    private_key:  (( vault "secret/pipelines/newrelic-boshrelease/github:private" ))
+    access_token: (( vault "secret/pipelines/newrelic-boshrelease/github:token" ))
+
+  slack:
+    webhook: (( vault "secret/pipelines/newrelic-boshrelease/slack:webhook" ))
+    channel: '#cf-community-pipeline'
