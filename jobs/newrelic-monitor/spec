@@ -18,3 +18,6 @@ properties:
   newrelic.proxy:
     description: "http/https proxy to use to access newrelic saas. see  https://docs.newrelic.com/docs/servers/new-relic-servers-linux/installation-configuration/linux-configuration-new-relic-servers "
     example: "fred:secret@proxy.mydomain.com:8181"
+  newrelic.hostname:
+    description: "Optional: Defines custom hostname for the node instead of using the instance name, followed by index ID and deployment tag.  Leave empty to use the instance name instead."
+    example: "postgres-dev"
