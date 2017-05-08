@@ -7,16 +7,20 @@ license_key=<%= p("newrelic.license_key") %>
 loglevel=info
 
 ssl=true
+<%
+deployment_name = properties.newrelic.deployment_tag
+if deployment_name.to_s.empty?
+  deployment_name = spec.deployment
+end
+-%>
 
 <% if properties.newrelic.hostname %>
-hostname=<%= properties.newrelic.hostname %>-<%= spec.index %>-<%= properties.newrelic.deployment_tag %>
+hostname=<%= properties.newrelic.hostname %>-<%= spec.index %>-<%= deployment_name %>
 <% else %>
-hostname=<%= name %>-<%= spec.index %>-<%= properties.newrelic.deployment_tag %>
+hostname=<%= name %>-<%= spec.index %>-<%= deployment_name %>
 <% end %>
 
-<% if properties.newrelic.deployment_tag %>
-labels="Deployment:<%= properties.newrelic.deployment_tag %>"
-<% end %>
+labels="Deployment:<%= deployment_name %>"
 
 <% if properties.newrelic.proxy %>
 proxy=<%= properties.newrelic.proxy %>
