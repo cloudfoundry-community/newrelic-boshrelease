@@ -16,6 +16,11 @@ header() {
 	echo
 }
 
+if [[ ! -x templates/make_manifest ]]; then
+	header "NOTHING TO TEST WITH"
+	exit 0
+fi
+
 header "Setting up ~/.bosh_config..."
 cat > ~/.bosh_config << EOF
 ---
