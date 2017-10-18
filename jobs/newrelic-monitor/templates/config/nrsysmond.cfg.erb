@@ -12,7 +12,7 @@ deployment_name = properties.newrelic.deployment_tag
 if deployment_name.to_s.empty?
   deployment_name = spec.deployment
 end
--%>
+%>
 
 <% if properties.newrelic.hostname %>
 hostname=<%= properties.newrelic.hostname %>-<%= spec.index %>-<%= deployment_name %>
