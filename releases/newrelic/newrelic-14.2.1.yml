@@ -1,0 +1,20 @@
+---
+packages:
+- name: newrelic-daemon
+  version: 815a47553192aaabccb6cffe0225c371c023f41a
+  fingerprint: 815a47553192aaabccb6cffe0225c371c023f41a
+  sha1: 4579cb5a9ee85974827ff2e961cc1597e3ff6563
+  dependencies: []
+jobs:
+- name: newrelic-monitor
+  version: d48a3c68d9f1020ed30bc48328d0828a56b0c9e9
+  fingerprint: d48a3c68d9f1020ed30bc48328d0828a56b0c9e9
+  sha1: 67ce445295a72ea3b070efc7e31ac67d65de9dbf
+license:
+  version: f2c8ad2a080343aa75c5a9c23c8155ec9f5775ad
+  fingerprint: f2c8ad2a080343aa75c5a9c23c8155ec9f5775ad
+  sha1: 1854ab97b971a1f8c8e5c1f72dc8c2dbf1b10656
+commit_hash: fc31d6fe
+uncommitted_changes: true
+name: newrelic
+version: 14.2.1
